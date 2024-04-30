@@ -6,7 +6,9 @@
   "private": true,
   "scripts": {
     "webpack": "webpack",
-    "dev": "webpack serve --open --config webpack.dev.js"
+    "dev": "webpack serve --open --config webpack.dev.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
   },
   "license": "ISC",
   "dependencies": {
